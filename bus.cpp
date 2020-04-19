@@ -74,21 +74,7 @@ void delBus(int id)
 		if (dBus->_busLine)	
 			throw dBus->_busLine;
 
-		throw dBus;
-	}
-	catch (cstring id)
-	{
-		throw;
-	}
-	catch (uint line)
-	{
-		throw;
-	}
-	catch (Bus* dBus)
-	{
-
 		//the function begins here:
-
 		Bus** temp = new Bus * [--busFleetCount];
 
 		for (int i = 0, j = 0; i < busFleetCount + 1; i++)
@@ -97,6 +83,14 @@ void delBus(int id)
 
 		busDtor(dBus);
 		buses = temp;
+	}
+	catch (cstring id)
+	{
+		throw;
+	}
+	catch (uint line)
+	{
+		throw;
 	}
 }
 

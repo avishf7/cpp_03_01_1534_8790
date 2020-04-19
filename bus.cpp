@@ -198,7 +198,7 @@ void busDriver(Bus& bus, const cstring dName)
 {
 	//Exceptions handling:
 
-	if (!dName || !strcmp(dName, ""))
+	if (!dName || *dName ==  ' ')
 		throw nullptr;
 
 	//the function begins here:

@@ -176,7 +176,9 @@ int main(void) {
 					throw intToStr(id);
 
 				cout << "Enter a name(til 100 charecters) to assign a name for a driver:" << endl;
-				cin >> setw(101) >> driverName;
+				cin.get();
+				cin.getline(driverName, 101);
+				//cin >> setw(101) >> driverName;
 
 				busDriver(*bus, driverName);
 			}
@@ -237,7 +239,7 @@ int main(void) {
 				cout << endl << "there isnt buses in the fleet" << endl;
 			break;
 		default:
-			cout << "ERROR" << endl;
+			cout << endl << "ERROR: an exception choice" << endl;
 			break;
 		}
 	} while (chosen != EXIT_MENU);

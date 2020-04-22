@@ -1,0 +1,17 @@
+﻿  bus.cpp
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(22,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(50,8): warning C4018: '<': signed/unsigned mismatch
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(80,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(87,17): warning C4101: 'id': unreferenced local variable
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(91,14): warning C4101: 'line': unreferenced local variable
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(130,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(161,17): warning C4101: 'id': unreferenced local variable
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(172,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(190,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(234,19): warning C4101: 'id': unreferenced local variable
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\bus.cpp(249,18): warning C4101: 'id': unreferenced local variable
+  line.cpp
+  main.cpp
+C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\main.cpp(185,17): warning C4101: 'ptr': unreferenced local variable
+  Generating Code...
+  cpp_03_01_1534_ 8790.vcxproj -> C:\Users\e3112\Documents\עדכון אחרון\cpp_03_01_1534_8790\x64\Debug\cpp_03_01_1534_ 8790.exe

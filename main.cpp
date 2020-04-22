@@ -218,7 +218,6 @@ int main(void) {
 
 			try
 			{
-
 				bus = getBus(id);
 				busPrint(*bus);
 			}

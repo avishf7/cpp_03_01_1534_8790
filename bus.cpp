@@ -71,7 +71,7 @@ void delBus(int id)
 	{
 		Bus* dBus = getBus(id);
 
-		if (dBus->_busLine)	
+		if (dBus->_busLine)
 			throw dBus->_busLine;
 
 		//the function begins here:
@@ -198,7 +198,7 @@ void busDriver(Bus& bus, const cstring dName)
 {
 	//Exceptions handling:
 
-	if (!dName || *dName ==  ' ')
+	if (!dName || *dName == ' ')
 		throw nullptr;
 
 	//the function begins here:
@@ -224,10 +224,12 @@ void busLine(Bus& bus, int line)
 	{
 		if (line)
 		{
+
 			lineAddBus(bus._busId, line);
 			try
 			{
-				lineDelBus(bus._busId, bus._busLine);
+				if (bus._busLine)
+					lineDelBus(bus._busId, bus._busLine);
 			}
 			catch (cstring id) {}
 			bus._busLine = line;
@@ -238,18 +240,15 @@ void busLine(Bus& bus, int line)
 			bus._busLine = line;
 		}
 	}
-	catch (int max)
+	catch (...)
 	{
-		bus._busLine = 0;
 		try
 		{
 			lineDelBus(bus._busId, bus._busLine);
 		}
 		catch (cstring id) {}
-		throw;
-	}
-	catch (cstring id)
-	{
+		bus._busLine = 0;
+
 		throw;
 	}
 }

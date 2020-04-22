@@ -145,7 +145,7 @@ int main(void) {
 			cin >> id;
 			try
 			{
-				if (!(bus = getBus(id))) 
+				if (!(bus = getBus(id)))
 					throw intToStr(id);
 
 				cout << "Enter a number between 1 to 9 to assign a line," << endl << "to unassign enter 0:" << endl;
@@ -215,10 +215,17 @@ int main(void) {
 		case SHOW_BUS:
 			cout << "\nEnter the ID licence(between 1 to 9999) of the bus that you want to see his details:" << endl;
 			cin >> id;
-			if (bus = getBus(id))
+
+			try
+			{
+
+				bus = getBus(id);
 				busPrint(*bus);
-			else
-				cout << endl << "ID Not found" << endl;
+			}
+			catch (cstring id)
+			{
+				cout << endl << "ERROR: An exception ID -> " << id << endl;
+			}
 			break;
 		case SHOW_LINE:
 			cout << "\nEnter the line that you want to see his details:" << endl;
